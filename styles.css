@@ -3,9 +3,11 @@ body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     background-color: #000;
-    background-image: radial-gradient(white, transparent 10%), radial-gradient(white, transparent 20%);
-    background-size: 20px 20px, 40px 40px;
-    background-position: 0px 0px, 10px 10px;
+    background-image: radial-gradient(white 1px, transparent 1px),
+                      radial-gradient(white 2px, transparent 2px),
+                      radial-gradient(white 3px, transparent 3px);
+    background-size: 50px 50px, 100px 100px, 200px 200px;
+    background-position: 0px 0px, 25px 25px, 50px 50px;
     color: #fff;
 }
 
@@ -30,7 +32,6 @@ header {
     width: auto;
 }
 
-/* Menu Button Styles */
 .menu-button {
     color: #fff;
     text-decoration: none;
@@ -160,6 +161,35 @@ header {
 
 .section-image:hover {
     transform: scale(1.05);
+}
+
+/* Tools Section */
+.tools-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.tools-box-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.tool-box {
+    flex: 1;
+    margin: 0 10px;
+    padding: 20px;
+    border: 2px solid #00bfff;
+    border-radius: 10px;
+    background-color: transparent;
+    text-align: center;
+    box-shadow: 0 0 10px #00bfff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tool-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #00bfff;
 }
 
 /* Footer */
