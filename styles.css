@@ -69,7 +69,7 @@ header {
 
 .subheading {
     font-family: 'Luckiest Guy', cursive;
-    font-size: 1.8rem;
+    font-size: 0.9rem; /* Halved the size of the subheading */
     font-weight: bold; /* Bold subheadings */
     color: #fff;
     margin: 10px 0;
@@ -230,3 +230,4 @@ footer {
     transform: scale(1.2);
     box-shadow: 0 0 10px #00bfff;
 }
+
