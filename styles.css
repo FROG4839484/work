@@ -68,11 +68,11 @@ header {
 }
 
 .subheading {
-    font-family: 'Luckiest Guy', cursive; /* Bubble-like style */
-    font-size: 1.8rem; /* Slightly larger for a bold look */
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 1.8rem;
     color: #fff;
     margin: 10px 0;
-    text-shadow: 0 0 5px #00bfff; /* Glow effect */
+    text-shadow: 0 0 5px #00bfff;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
@@ -156,9 +156,9 @@ header {
 }
 
 .section-image {
-    flex: 0.5;
-    max-width: 500px;
-    border: 2px solid #00bfff;
+    flex: 0.3; /* Reduced size */
+    max-width: 250px; /* Half of the original size */
+    border: 2px solid #00bfff; /* Maintains proportional border */
     border-radius: 10px;
     box-shadow: 0 0 10px #00bfff;
     transition: transform 0.3s ease;
