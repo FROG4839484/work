@@ -20,8 +20,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const dropdownItems = dropdownMenu.querySelectorAll('li');
     dropdownItems.forEach(item => {
+        item.addEventListener('mouseover', () => {
+            item.style.backgroundColor = '#00bfff';
+            item.style.color = '#000';
+        });
+        item.addEventListener('mouseout', () => {
+            item.style.backgroundColor = '';
+            item.style.color = '#fff';
+        });
         item.addEventListener('click', () => {
-            dropdownItems.forEach(i => i.style.backgroundColor = ''); // Reset other items
+            dropdownItems.forEach(i => i.style.backgroundColor = ''); // Reset others
             item.style.backgroundColor = '#00bfff'; // Highlight selected
         });
     });
@@ -30,14 +38,17 @@ document.addEventListener('DOMContentLoaded', () => {
 // Smooth scrolling for navigation links
 document.querySelectorAll('a.menu-button').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
-        if (this.hash !== '') {
+        const targetId = this.getAttribute('href').split("#")[1];
+        if (targetId) {
             e.preventDefault();
-            const targetSection = document.querySelector(this.hash);
+            const targetSection = document.getElementById(targetId);
             if (targetSection) {
                 targetSection.scrollIntoView({
-                    behavior: 'smooth'
+                    behavior: 'smooth',
+                    block: 'start'
                 });
             }
         }
     });
 });
+
