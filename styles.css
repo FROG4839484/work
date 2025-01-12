@@ -1,0 +1,93 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Roboto:wght@700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #000; /* Solid black background */
+    background-image: radial-gradient(white, transparent), 
+                      radial-gradient(#00bfff, transparent);
+    background-position: 0% 0%, 50% 50%;
+    background-size: 2px 2px, 1px 1px;
+    background-repeat: repeat, repeat;
+    color: #fff;
+    text-align: center;
+}
+
+header {
+    padding: 10px 20px;
+    background-color: rgba(34, 34, 34, 0.8);
+}
+
+.logo {
+    height: 60px;
+    border: 3px solid #00bfff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #00bfff;
+}
+
+.section {
+    padding: 50px 20px;
+    margin: 30px 0;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 0 20px #00bfff;
+}
+
+.heading {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 2.8rem;
+    color: #fff;
+    text-shadow: 0 0 10px #00bfff;
+    margin-bottom: 10px;
+}
+
+.subheading {
+    font-size: 1.6rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.section-image {
+    float: left;
+    margin-right: 20px;
+    width: 30%;
+    border: 2px solid #00bfff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #00bfff;
+}
+
+.text-content {
+    text-align: left;
+    display: inline-block;
+    width: 65%;
+    vertical-align: top;
+}
+
+.cta-button {
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    color: #000;
+    background-color: #00bfff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 15px #00bfff;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #fff;
+    color: #00bfff;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(34, 34, 34, 0.8);
+    color: #fff;
+}
