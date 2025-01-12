@@ -1,11 +1,10 @@
 /* General Styles */
 body {
-  font-family: "Arial", sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f9f9f9;
   color: #333;
-  line-height: 1.6;
 }
 
 header {
@@ -17,10 +16,10 @@ header {
 
 header nav ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
   display: flex;
   justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 header nav ul li {
@@ -31,15 +30,8 @@ header nav ul li a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.1rem;
-  transition: color 0.3s;
 }
 
-header nav ul li a:hover {
-  color: #f4a261;
-}
-
-/* Hero Section */
 #hero {
   background-color: #f4a261;
   color: #fff;
@@ -47,185 +39,12 @@ header nav ul li a:hover {
   padding: 4rem 1rem;
   background-image: url('/images/backblue.gif');
   background-size: cover;
-  background-position: center;
 }
 
-#hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-#hero p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-}
-
-#hero button {
-  background-color: #fff;
-  color: #f4a261;
-  border: none;
-  padding: 0.8rem 1.5rem;
-  font-size: 1rem;
-  font-weight: bold;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-#hero button:hover {
-  background-color: #f4a261;
-  color: #fff;
-}
-
-/* Tokenomics Section */
-#tokenomics {
-  background-color: #fff;
-  text-align: center;
-  padding: 2rem 1rem;
-}
-
-#tokenomics h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #333;
-}
-
-#tokenomics ul {
-  list-style: none;
-  padding: 0;
-}
-
-#tokenomics ul li {
-  font-size: 1.2rem;
-  margin: 0.5rem 0;
-}
-
-/* How to Buy Section */
-#howtobuy {
-  background-color: #e9ecef;
-  padding: 2rem 1rem;
-  text-align: center;
-}
-
-#howtobuy h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-#howtobuy ol {
-  list-style: decimal;
-  padding-left: 1.5rem;
-  text-align: left;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-#howtobuy ol li {
-  font-size: 1.2rem;
-  margin: 0.5rem 0;
-}
-
-#howtobuy button {
-  margin-top: 2rem;
-  background-color: #f4a261;
-  color: #fff;
-  border: none;
-  padding: 0.8rem 1.5rem;
-  font-size: 1rem;
-  font-weight: bold;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-#howtobuy button:hover {
-  background-color: #d35d2c;
-}
-
-/* Partners Section */
-#partners {
-  background-color: #fff;
-  padding: 2rem 1rem;
-  text-align: center;
-}
-
-#partners h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-#partners .partner-logos {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-#partners .partner-logos img {
-  max-height: 50px;
-  margin: 0.5rem;
-}
-
-/* Reviews Section */
-#reviews {
-  background-color: #f4f4f4;
-  padding: 2rem 1rem;
-  text-align: center;
-}
-
-#reviews h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-#reviews .reviews {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: left;
-}
-
-#reviews .reviews div {
-  background-color: #fff;
-  padding: 1rem;
-  margin: 1rem 0;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-#reviews .reviews div h3 {
-  font-size: 1.3rem;
-  color: #333;
-}
-
-#reviews .reviews div p {
-  font-size: 1rem;
-  color: #666;
-}
-
-/* Footer */
 footer {
   background-color: #222;
   color: #fff;
-  padding: 1.5rem 1rem;
+  padding: 1rem;
   text-align: center;
 }
 
-footer .social-media {
-  margin-bottom: 1rem;
-}
-
-footer .social-media a {
-  margin: 0 0.5rem;
-  color: #fff;
-  font-size: 1.2rem;
-  transition: color 0.3s;
-}
-
-footer .social-media a:hover {
-  color: #f4a261;
-}
-
-footer p {
-  font-size: 0.9rem;
-  margin: 0;
-}
