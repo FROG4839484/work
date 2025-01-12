@@ -82,10 +82,10 @@ header {
     opacity: 0.9;
 }
 
-/* Enlarged Text Sections */
+/* Paragraph Text in Sections */
 .content p {
-    font-size: 3rem; /* Tripled text size */
-    line-height: 1.5; /* Adjusted line height for readability */
+    font-size: 1.8rem; /* Adjusted to match subheadings */
+    line-height: 1.5;
     color: #fff;
     margin-bottom: 20px;
 }
