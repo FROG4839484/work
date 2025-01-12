@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (targetElement) {
         window.scrollTo({
           top: targetElement.offsetTop,
-          behavior: 'smooth'
+          behavior: 'smooth',
         });
       }
     });
@@ -27,9 +27,38 @@ document.addEventListener('DOMContentLoaded', () => {
         x: Math.random() * canvas.width,
         y: Math.random() * canvas.height,
         radius: Math.random() * 2,
-        speed: Math.random() * 0.5 + 0.2
+        speed: Math.random() * 0.5 + 0.2,
       });
     }
+
+    function drawStars() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      stars.forEach(star => {
+        ctx.beginPath();
+        ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
+        ctx.fillStyle = 'white';
+        ctx.fill();
+      });
+    }
+
+    function updateStars() {
+      stars.forEach(star => {
+        star.y += star.speed;
+        if (star.y > canvas.height) star.y = 0;
+      });
+    }
+
+    function animateStars() {
+      drawStars();
+      updateStars();
+      requestAnimationFrame(animateStars);
+    }
+
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    animateStars();
+  }
+});
 
     function drawStars() {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
