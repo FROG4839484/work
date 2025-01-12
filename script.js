@@ -38,9 +38,10 @@ document.addEventListener('DOMContentLoaded', () => {
 // Smooth scrolling for navigation links
 document.querySelectorAll('a.menu-button').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
-        const targetId = this.getAttribute('href').split("#")[1];
-        if (targetId) {
+        const href = this.getAttribute('href');
+        if (href && href.startsWith('#')) {
             e.preventDefault();
+            const targetId = href.slice(1);
             const targetSection = document.getElementById(targetId);
             if (targetSection) {
                 targetSection.scrollIntoView({
@@ -52,3 +53,15 @@ document.querySelectorAll('a.menu-button').forEach(anchor => {
     });
 });
 
+// Button and Hover Effects
+const buttons = document.querySelectorAll('.cta-button, .menu-button');
+buttons.forEach(button => {
+    button.addEventListener('mouseover', () => {
+        button.style.transform = 'scale(1.05)';
+        button.style.boxShadow = '0 0 15px #00bfff';
+    });
+    button.addEventListener('mouseout', () => {
+        button.style.transform = 'scale(1)';
+        button.style.boxShadow = 'none';
+    });
+});
