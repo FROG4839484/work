@@ -30,7 +30,7 @@ header {
     width: auto;
 }
 
-/* Buttons, Images, and Animations */
+/* Menu Button Styles */
 .menu-button {
     color: #fff;
     text-decoration: none;
@@ -40,5 +40,149 @@ header {
     transition: all 0.3s ease;
 }
 
-/* Dropdown & Footer */
-...
+.menu-button:hover {
+    background-color: #00bfff;
+    color: #000;
+    transform: scale(1.05);
+}
+
+/* Hero Section */
+#hero {
+    padding: 150px 20px;
+    text-align: center;
+    background-color: transparent;
+}
+
+.heading {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 3rem;
+    margin: 20px 0;
+    color: white;
+    text-shadow: 0 0 10px #00bfff;
+    transition: transform 0.3s ease;
+}
+
+.heading:hover {
+    transform: scale(1.05);
+}
+
+.subheading {
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 10px 0;
+    transition: opacity 0.3s ease;
+}
+
+.subheading:hover {
+    opacity: 0.8;
+}
+
+/* Input Container */
+.input-container {
+    position: relative;
+    margin-top: 30px;
+    width: 80%;
+    max-width: 600px;
+}
+
+#crypto-input {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    border: 2px solid white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #00bfff;
+    background-color: transparent;
+    color: #fff;
+    outline: none;
+}
+
+#dropdown-menu {
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    background-color: #222;
+    border-radius: 5px;
+    border: 2px solid #00bfff;
+    box-shadow: 0 0 10px #00bfff;
+    padding: 10px;
+    display: none;
+}
+
+/* Dropdown Menu Items */
+#dropdown-menu li {
+    padding: 10px;
+    cursor: pointer;
+    list-style: none;
+}
+
+#dropdown-menu li:hover {
+    background-color: #00bfff;
+    color: #000;
+}
+
+/* Buttons and CTA */
+.cta-button {
+    margin-top: 20px;
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #00bfff;
+    color: #000;
+    transform: scale(1.05);
+}
+
+/* Section Content */
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 0;
+    padding: 0 50px;
+    text-align: left;
+}
+
+.section-image {
+    flex: 0.5;
+    max-width: 500px;
+    border: 2px solid #00bfff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00bfff;
+    transition: transform 0.3s ease;
+}
+
+.section-image:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    margin-top: 50px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.footer-logo {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.social-icons a img {
+    width: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px #00bfff;
+}
