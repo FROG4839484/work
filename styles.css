@@ -84,7 +84,7 @@ header {
 
 /* Paragraph Text in Sections */
 .content p {
-    font-size: 1.8rem; /* Adjusted to match subheadings */
+    font-size: 1.2rem; /* Adjusted to 1.2rem */
     line-height: 1.5;
     color: #fff;
     margin-bottom: 20px;
