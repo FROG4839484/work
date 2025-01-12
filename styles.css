@@ -70,6 +70,7 @@ header {
 .subheading {
     font-family: 'Luckiest Guy', cursive;
     font-size: 1.8rem;
+    font-weight: bold; /* Bold subheadings */
     color: #fff;
     margin: 10px 0;
     text-shadow: 0 0 5px #00bfff;
@@ -79,6 +80,14 @@ header {
 .subheading:hover {
     transform: scale(1.03);
     opacity: 0.9;
+}
+
+/* Enlarged Text Sections */
+.content p {
+    font-size: 3rem; /* Tripled text size */
+    line-height: 1.5; /* Adjusted line height for readability */
+    color: #fff;
+    margin-bottom: 20px;
 }
 
 /* Input Container */
