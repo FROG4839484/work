@@ -3,8 +3,9 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9;
-  color: #333;
+  background-color: #111;
+  color: #fff;
+  overflow: hidden;
 }
 
 header {
@@ -30,21 +31,42 @@ header nav ul li a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s;
 }
 
+header nav ul li a:hover {
+  color: #f4a261;
+}
+
+/* Hero Section */
 #hero {
+  position: relative;
+  text-align: center;
+  padding: 5rem 1rem;
+}
+
+#hero canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+button {
   background-color: #f4a261;
   color: #fff;
-  text-align: center;
-  padding: 4rem 1rem;
-  background-image: url('/images/backblue.gif');
-  background-size: cover;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: transform 0.3s;
 }
 
-footer {
-  background-color: #222;
-  color: #fff;
-  padding: 1rem;
-  text-align: center;
+button:hover {
+  background-color: #d35d2c;
+  transform: scale(1.1);
 }
-
