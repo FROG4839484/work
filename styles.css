@@ -69,8 +69,8 @@ header {
 
 .subheading {
     font-family: 'Luckiest Guy', cursive;
-    font-size: 0.9rem; /* Halved the size of the subheading */
-    font-weight: bold; /* Bold subheadings */
+    font-size: 2.5rem; /* Slightly smaller than the headings */
+    font-weight: bold;
     color: #fff;
     margin: 10px 0;
     text-shadow: 0 0 5px #00bfff;
