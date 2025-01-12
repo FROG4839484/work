@@ -1,0 +1,122 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Roboto:wght@700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    background-color: #000;
+    background-image: radial-gradient(white, transparent), 
+                      radial-gradient(#00bfff, transparent);
+    background-position: 0% 0%, 50% 50%;
+    background-size: 2px 2px, 1px 1px;
+    background-repeat: repeat, repeat;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(34, 34, 34, 0.8);
+    color: #fff;
+}
+
+.logo {
+    height: 60px;
+    border: 3px solid #00bfff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #00bfff;
+}
+
+#hero h1, #hero h2 {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 2.5rem;
+    color: #00bfff;
+    text-shadow: 0 0 10px #00bfff;
+}
+
+.section-image {
+    margin: 20px auto;
+    width: 70%; /* Maintain proportional size */
+    max-width: 600px; /* Limit the width for consistency */
+    border: 2px solid #00bfff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #00bfff;
+}
+
+.input-container {
+    margin-top: 20px;
+    position: relative;
+}
+
+#crypto-input {
+    width: 80%;
+    padding: 15px;
+    font-size: 1rem;
+    border: 2px solid #00bfff;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 0 10px #00bfff;
+}
+
+#dropdown-menu {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #222;
+    border: 2px solid #00bfff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #00bfff;
+    width: 80%;
+    list-style: none;
+    padding: 10px 0;
+    display: none;
+}
+
+#dropdown-menu li {
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+#dropdown-menu li:hover {
+    background-color: #00bfff;
+}
+
+.cta-button {
+    margin-top: 20px;
+    padding: 15px 25px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #00bfff;
+    color: #000;
+    cursor: pointer;
+    box-shadow: 0 0 10px #00bfff;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background-color: #fff;
+    color: #00bfff;
+}
+
+.token-box {
+    margin: 20px auto;
+    padding: 15px;
+    border: 2px solid #00bfff;
+    border-radius: 5px;
+    width: 80%;
+    box-shadow: 0 0 10px #00bfff;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(34, 34, 34, 0.8);
+    color: #fff;
+}
