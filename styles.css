@@ -69,7 +69,7 @@ header {
 
 .subheading {
     font-family: 'Luckiest Guy', cursive;
-    font-size: 1.8rem; /* Set subheading size to 1.8rem */
+    font-size: 1.8rem; /* Subheading size set to 1.8rem */
     font-weight: bold;
     color: #fff;
     margin: 10px 0;
@@ -220,9 +220,18 @@ footer {
     margin-bottom: 10px;
 }
 
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
 .social-icons a img {
     width: 30px;
     margin: 0 10px;
+    background-color: black; /* Black square background */
+    padding: 10px; /* Adds padding for square appearance */
+    border-radius: 5px; /* Slight rounding for smoother edges */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
