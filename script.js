@@ -1,67 +1,46 @@
-// Dropdown functionality for the text box
-document.addEventListener('DOMContentLoaded', () => {
-    const inputField = document.getElementById('crypto-input');
-    const dropdownMenu = document.getElementById('dropdown-menu');
+// Script for S.U.S AI Website
 
-    inputField.addEventListener('input', (e) => {
-        const value = e.target.value;
-        if (value.startsWith('/')) {
-            dropdownMenu.style.display = 'block';
-        } else {
-            dropdownMenu.style.display = 'none';
-        }
-    });
+document.addEventListener("DOMContentLoaded", () => {
+    // Theme Application
+    const bodyClass = document.body.classList.contains("red-theme") ? "red-theme" : "blue-theme";
+    document.documentElement.style.setProperty("--primary-glow", bodyClass === "red-theme" ? "#ff4500" : "#00bfff");
 
-    document.addEventListener('click', (e) => {
-        if (!dropdownMenu.contains(e.target) && e.target !== inputField) {
-            dropdownMenu.style.display = 'none';
-        }
-    });
+    // Dropdown Menu Functionality
+    const cryptoInput = document.getElementById("crypto-input");
+    const dropdownMenu = document.getElementById("dropdown-menu");
 
-    const dropdownItems = dropdownMenu.querySelectorAll('li');
-    dropdownItems.forEach(item => {
-        item.addEventListener('mouseover', () => {
-            item.style.backgroundColor = '#00bfff';
-            item.style.color = '#000';
-        });
-        item.addEventListener('mouseout', () => {
-            item.style.backgroundColor = '';
-            item.style.color = '#fff';
-        });
-        item.addEventListener('click', () => {
-            dropdownItems.forEach(i => i.style.backgroundColor = ''); // Reset others
-            item.style.backgroundColor = '#00bfff'; // Highlight selected
-        });
-    });
-});
-
-// Smooth scrolling for navigation links
-document.querySelectorAll('a.menu-button').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        const href = this.getAttribute('href');
-        if (href && href.startsWith('#')) {
-            e.preventDefault();
-            const targetId = href.slice(1);
-            const targetSection = document.getElementById(targetId);
-            if (targetSection) {
-                targetSection.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
+    if (cryptoInput && dropdownMenu) {
+        cryptoInput.addEventListener("input", (e) => {
+            if (e.target.value.includes("/")) {
+                dropdownMenu.style.display = "block";
+            } else {
+                dropdownMenu.style.display = "none";
             }
-        }
-    });
-});
+        });
 
-// Button and Hover Effects
-const buttons = document.querySelectorAll('.cta-button, .menu-button');
-buttons.forEach(button => {
-    button.addEventListener('mouseover', () => {
-        button.style.transform = 'scale(1.05)';
-        button.style.boxShadow = '0 0 15px #00bfff';
-    });
-    button.addEventListener('mouseout', () => {
-        button.style.transform = 'scale(1)';
-        button.style.boxShadow = 'none';
+        // Close dropdown when clicking outside
+        document.addEventListener("click", (e) => {
+            if (!dropdownMenu.contains(e.target) && e.target !== cryptoInput) {
+                dropdownMenu.style.display = "none";
+            }
+        });
+
+        // Add hover effects to dropdown items
+        const dropdownItems = dropdownMenu.querySelectorAll("li");
+        dropdownItems.forEach((item) => {
+            item.addEventListener("mouseenter", () => item.style.backgroundColor = "var(--primary-glow)");
+            item.addEventListener("mouseleave", () => item.style.backgroundColor = "");
+        });
+    }
+
+    // Navigation Highlighting
+    const navLinks = document.querySelectorAll(".menu-button");
+    const currentPage = location.pathname.split("/").pop();
+    navLinks.forEach(link => {
+        if (link.href.includes(currentPage)) {
+            link.classList.add("active");
+        } else {
+            link.classList.remove("active");
+        }
     });
 });
