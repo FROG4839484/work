@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
 </head>
-<body>
+<body class="blue-theme">
     <!-- Header -->
     <header>
         <div class="menu">
@@ -16,9 +16,10 @@
                 <img src="mascot-logo.png" alt="S.U.S AI Logo" class="logo">
             </div>
             <nav>
-                <a href="https://discord.gg/Kk6nU79Z" class="menu-button">JOIN OUR COMMUNITY</a>
+                <a href="index.html" class="menu-button active">HOME</a>
                 <a href="is-it-sus.html" class="menu-button">IS IT SUS</a>
                 <a href="sus-collab.html" class="menu-button">SUS COLLAB</a>
+                <a href="https://discord.gg/Kk6nU79Z" class="menu-button">JOIN OUR COMMUNITY</a>
             </nav>
         </div>
     </header>
@@ -28,7 +29,7 @@
         <h1 class="heading">S.U.S AI</h1>
         <h2 class="subheading">Secure Utility Systems</h2>
         <div class="input-container">
-            <input id="crypto-input" type="text" placeholder="coming soon... / for menu" />
+            <input id="crypto-input" type="text" placeholder="coming soon... / for menu">
             <ul id="dropdown-menu">
                 <li>/AI Analysis</li>
                 <li>/Holders</li>
@@ -44,42 +45,72 @@
 
     <!-- Advanced Tools Section -->
     <section id="advanced-tools" class="section">
-        <div class="content">
-            <div class="text-content">
-                <h2 class="heading">You Can Trust Us (We Checked)</h2>
-                <p>Our AI won't leave you hanging. If it's SUS, we'll find it.</p>
+        <div class="glowing-box">
+            <div class="content">
+                <div class="text-content">
+                    <h2 class="heading">You Can Trust Us (We Checked)</h2>
+                    <p>Our AI won't leave you hanging. If it's SUS, we'll find it.</p>
+                </div>
+                <img src="mascot-tech.png" alt="AI-Enhanced Tools" class="section-image">
             </div>
-            <img src="mascot-tech.png" alt="AI-Enhanced Tools" class="section-image">
         </div>
     </section>
 
     <!-- Developer Tools Section -->
     <section id="developer-tools" class="section">
-        <div class="content">
-            <img src="mascot-computer.png" alt="Developer Tools" class="section-image">
-            <div class="text-content">
-                <h2 class="heading">You Can Trust Us (We Checked)</h2>
-                <p>Our AI won't leave you hanging. If it's SUS, we'll find it.</p>
+        <div class="glowing-box">
+            <div class="content">
+                <img src="Mascot-computer.png" alt="Developer Tools" class="section-image">
+                <div class="text-content">
+                    <h2 class="heading">You Can Trust Us (We Checked)</h2>
+                    <p>Our AI won't leave you hanging. If it's SUS, we'll find it.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Our Tools Section -->
-    <section id="features" class="section tools-section">
+    <section id="tools" class="section glitch-section">
         <h2 class="heading">Our Tools</h2>
         <div class="tools-box-container">
-            <!-- Example Tool Boxes -->
-            <div class="tool-box">
-                <h3 class="subheading">APIs & Libraries</h3>
-                <p>Access curated and verified APIs for blockchain projects.</p>
+            <!-- First Row -->
+            <div class="tool-box glitch-box">
+                <h3 class="subheading">Smart Contract Validation</h3>
+                <p>Leverage SMT solvers for bytecode vulnerability detection and flow analysis.</p>
             </div>
-            <div class="tool-box">
-                <h3 class="subheading">AI Coding Challenges</h3>
-                <p>Gamify blockchain coding skills with AI-generated challenges.</p>
+            <div class="tool-box glitch-box">
+                <h3 class="subheading">API Orchestration</h3>
+                <p>High-throughput RPC aggregation with tokenized authentication layers.</p>
             </div>
-            <div class="tool-box">
-                <h3 class="subheading">Community Contributions</h3>
-                <p>Upload verified tools and earn project tokens for contributions.</p>
+            <div class="tool-box glitch-box">
+                <h3 class="subheading">Cryptographic Libraries</h3>
+                <p>Access precompiled BLS12-381 pairing and AES-GCM primitives.</p>
+            </div>
+            <!-- Second Row -->
+            <div class="tool-box glitch-box">
+                <h3 class="subheading">AI Debugging</h3>
+                <p>Real-time debugging via AI-driven anomaly detection.</p>
+            </div>
+            <div class="tool-box glitch-box">
+                <h3 class="subheading">Consensus Simulation</h3>
+                <p>Simulate PoS/PoW mechanisms with tunable Byzantine tolerance.</p>
+            </div>
+            <div class="tool-box glitch-box">
+                <h3 class="subheading">Token Management</h3>
+                <p>ERC-compliant lifecycle automation and Merkle-based snapshots.</p>
+            </div>
+            <!-- Third Row -->
+            <div class="tool-box glitch-box">
+                <h3 class="subheading">DeFi Liquidity Monitoring</h3>
+                <p>Analyze AMM metrics and predict impermanent loss.</p>
+            </div>
+            <div class="tool-box glitch-box">
+                <h3 class="subheading">AI Libraries</h3>
+                <p>Integrate SDKs for federated learning and DAG analysis.</p>
+            </div>
+            <div class="tool-box glitch-box">
+                <h3 class="subheading">DApp Templates</h3>
+                <p>Develop zkRollup-compatible apps with prebuilt WASM modules.</p>
             </div>
         </div>
     </section>
@@ -89,8 +120,8 @@
         <div class="footer-content">
             <img src="mascot-logo.png" alt="S.U.S AI Logo" class="footer-logo">
             <div class="social-icons">
-                <a href="#" id="twitter-icon"><img src="x.svg" alt="Twitter Logo"></a>
-                <a href="#" id="telegram-icon"><img src="telegram.svg" alt="Telegram Logo"></a>
+                <a href="#"><img src="x.svg" alt="Twitter Logo"></a>
+                <a href="#"><img src="telegram.svg" alt="Telegram Logo"></a>
             </div>
         </div>
         <p>&copy; 2025 - S.U.S AI LTD</p>
