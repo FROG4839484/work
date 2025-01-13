@@ -12,8 +12,8 @@ document.addEventListener("DOMContentLoaded", () => {
             if (e.target.value.includes("/")) {
                 const rect = cryptoInput.getBoundingClientRect();
                 dropdownMenu.style.width = `${rect.width}px`;
-                dropdownMenu.style.left = `${rect.left + window.scrollX}px`; // Account for scrolling
-                dropdownMenu.style.top = `${rect.bottom + window.scrollY}px`; // Account for scrolling
+                dropdownMenu.style.left = `${rect.left + window.scrollX}px`;
+                dropdownMenu.style.top = `${rect.bottom + window.scrollY}px`;
                 dropdownMenu.style.display = "block";
             } else {
                 dropdownMenu.style.display = "none";
@@ -26,38 +26,15 @@ document.addEventListener("DOMContentLoaded", () => {
                 dropdownMenu.style.display = "none";
             }
         });
-
-        // Add hover effects to dropdown items
-        const dropdownItems = dropdownMenu.querySelectorAll("li");
-        dropdownItems.forEach((item) => {
-            item.addEventListener("mouseenter", () => item.style.backgroundColor = "var(--primary-glow)");
-            item.addEventListener("mouseleave", () => item.style.backgroundColor = "");
-        });
     }
 
-    // Glitch Animation for "Our Tools" Section
-    const glitchBoxes = document.querySelectorAll(".glitch-box");
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                glitchBoxes.forEach((box, index) => {
-                    setTimeout(() => box.classList.add("animate-glitch"), index * 100); // Staggered animation
-                });
-                observer.disconnect(); // Trigger only once
-            }
+    // Hamburger Menu Toggle
+    const hamburgerMenu = document.getElementById("hamburger-menu");
+    const navMenu = document.querySelector(".nav-menu");
+
+    if (hamburgerMenu && navMenu) {
+        hamburgerMenu.addEventListener("click", () => {
+            navMenu.classList.toggle("visible");
         });
-    }, { threshold: 0.2 });
-
-    glitchBoxes.forEach((box) => observer.observe(box));
-
-    // Navigation Highlighting
-    const navLinks = document.querySelectorAll(".menu-button");
-    const currentPage = location.pathname.split("/").pop();
-    navLinks.forEach(link => {
-        if (link.href.includes(currentPage)) {
-            link.classList.add("active");
-        } else {
-            link.classList.remove("active");
-        }
-    });
+    }
 });
