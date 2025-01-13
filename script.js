@@ -1,11 +1,11 @@
 // Script for S.U.S AI Website
 
 document.addEventListener("DOMContentLoaded", () => {
-    // Theme Application
+    // Theme Setup
     const bodyClass = document.body.classList.contains("red-theme") ? "red-theme" : "blue-theme";
     document.documentElement.style.setProperty("--primary-glow", bodyClass === "red-theme" ? "#ff4500" : "#00bfff");
 
-    // Dropdown Menu Functionality
+    // Dropdown Menu Logic
     const cryptoInput = document.getElementById("crypto-input");
     const dropdownMenu = document.getElementById("dropdown-menu");
 
