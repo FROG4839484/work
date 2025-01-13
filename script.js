@@ -12,8 +12,8 @@ document.addEventListener("DOMContentLoaded", () => {
             if (e.target.value.includes("/")) {
                 const rect = cryptoInput.getBoundingClientRect();
                 dropdownMenu.style.width = `${rect.width}px`;
-                dropdownMenu.style.left = `${rect.left}px`;
-                dropdownMenu.style.top = `${rect.bottom}px`;
+                dropdownMenu.style.left = `${rect.left + window.scrollX}px`; // Account for scrolling
+                dropdownMenu.style.top = `${rect.bottom + window.scrollY}px`; // Account for scrolling
                 dropdownMenu.style.display = "block";
             } else {
                 dropdownMenu.style.display = "none";
