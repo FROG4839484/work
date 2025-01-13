@@ -3,22 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="S.U.S AI - Secure Utility Systems">
     <title>S.U.S AI</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <!-- Header -->
     <header>
         <div class="menu">
             <div class="logo-container">
-                <img src="mascot-logo.png" alt="S.U.S AI Logo">
+                <img src="mascot-logo.png" alt="S.U.S AI Logo" class="logo">
             </div>
-            <div class="menu-buttons">
-                <a href="#" class="menu-button">JOIN OUR COMMUNITY</a>
-                <a href="#" class="menu-button">IS IT SUS</a>
-                <a href="#" class="menu-button">SUS COLLAB</a>
-            </div>
+            <nav>
+                <a href="https://discord.gg/Kk6nU79Z" class="menu-button">JOIN OUR COMMUNITY</a>
+                <a href="is-it-sus.html" class="menu-button">IS IT SUS</a>
+                <a href="sus-collab.html" class="menu-button">SUS COLLAB</a>
+            </nav>
         </div>
     </header>
 
@@ -27,40 +28,70 @@
         <h1 class="heading">S.U.S AI</h1>
         <h2 class="subheading">Secure Utility Systems</h2>
         <div class="input-container">
-            <input type="text" id="crypto-input" placeholder="coming soon.. '/' for menu">
+            <input id="crypto-input" type="text" placeholder="coming soon... / for menu" />
+            <ul id="dropdown-menu">
+                <li>/AI Analysis</li>
+                <li>/Holders</li>
+                <li>/Snipers</li>
+                <li>/Bots</li>
+                <li>/Socials</li>
+                <li>/Dev</li>
+                <li>/Token Info</li>
+            </ul>
         </div>
-        <button class="cta-button">IS IT SUS</button>
+        <button class="cta-button">Is It SUS</button>
     </section>
 
-    <!-- Content Sections -->
-    <section class="content">
-        <div>
-            <p>Collaborate, access verified APIs, and build modular AI agents tailored to blockchain tasks, dApps, and wallets.</p>
-            <p>SUS analyzes your tokens or manually checks for manipulated contracts, sniper wallets, bundling, and holders.</p>
-        </div>
-        <div>
-            <img src="Mascot-computer.png" alt="Mascot Computer" class="section-image">
+    <!-- Alternating Layout Sections -->
+    <section id="analyze" class="section">
+        <div class="content">
+            <div class="text-content">
+                <h2 class="heading">Analyze Token Security</h2>
+                <p>SUS analyzes your tokens or manually checks for manipulated contracts, sniper wallets, bundling, and holders.</p>
+            </div>
+            <img src="mascot-tech.png" alt="Token Analysis Mascot" class="section-image">
         </div>
     </section>
 
-    <section class="content">
-        <div>
-            <img src="mascot-tech.png" alt="Mascot Tech" class="section-image">
+    <section id="tools" class="section">
+        <div class="content">
+            <img src="Mascot-computer.png" alt="Developer Tools Mascot" class="section-image">
+            <div class="text-content">
+                <h2 class="heading">Developer Tools</h2>
+                <p>Collaborate, access verified APIs, and build modular AI agents tailored to blockchain tasks, dApps, and wallets.</p>
+            </div>
         </div>
-        <div>
-            <p>Building From Scratch Is SUS: Introducing a marketplace for modular AI agents tailored to blockchain tools and dApps.</p>
-            <p>Analyze token security with SUS for smart contract manipulation, sniper wallets, and token analysis.</p>
+    </section>
+
+    <!-- Section with Three Boxes -->
+    <section id="features" class="section tools-section">
+        <h2 class="heading">Our Tools</h2>
+        <div class="tools-box-container">
+            <div class="tool-box">
+                <h3 class="subheading">APIs & Libraries</h3>
+                <p>Access curated and verified APIs for blockchain projects.</p>
+            </div>
+            <div class="tool-box">
+                <h3 class="subheading">AI Coding Challenges</h3>
+                <p>Gamify blockchain coding skills with AI-generated challenges.</p>
+            </div>
+            <div class="tool-box">
+                <h3 class="subheading">Community Contributions</h3>
+                <p>Upload verified tools and earn project tokens for contributions.</p>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <img src="mascot-logo.png" alt="S.U.S AI Logo" class="footer-logo">
-        <div class="social-icons">
-            <a href="#"><img src="telegram.svg" alt="Telegram"></a>
-            <a href="#"><img src="x.svg" alt="X"></a>
+        <div class="footer-content">
+            <img src="mascot-logo.png" alt="S.U.S AI Logo" class="footer-logo">
+            <div class="social-icons">
+                <a href="#" id="twitter-icon"><img src="x.svg" alt="Twitter Logo"></a>
+                <a href="#" id="telegram-icon"><img src="telegram.svg" alt="Telegram Logo"></a>
+            </div>
         </div>
-        <p>S.U.S AI. LTD © 2025</p>
+        <p>&copy; 2025 - S.U.S AI LTD</p>
     </footer>
 </body>
 </html>
