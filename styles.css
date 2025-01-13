@@ -41,13 +41,8 @@ header {
     transition: all 0.3s ease;
 }
 
-.menu-button.active {
-    border-color: #ff0000;
-    color: #ff0000;
-}
-
 .menu-button:hover {
-    background-color: #ff0000;
+    background-color: #00bfff;
     color: #000;
     transform: scale(1.05);
 }
@@ -64,7 +59,7 @@ header {
     font-size: 3rem;
     margin: 20px 0;
     color: white;
-    text-shadow: 0 0 10px #ff0000;
+    text-shadow: 0 0 10px #00bfff;
     transition: transform 0.3s ease;
 }
 
@@ -78,21 +73,13 @@ header {
     font-weight: bold;
     color: #fff;
     margin: 10px 0;
-    text-shadow: 0 0 5px #ff0000;
+    text-shadow: 0 0 5px #00bfff;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .subheading:hover {
     transform: scale(1.03);
     opacity: 0.9;
-}
-
-/* Paragraph Text in Sections */
-.content p {
-    font-size: 1.2rem;
-    line-height: 1.5;
-    color: #fff;
-    margin-bottom: 20px;
 }
 
 /* Input Container */
@@ -105,48 +92,39 @@ header {
     margin-right: auto;
 }
 
-#crypto-input,
-#wallet-input {
+#crypto-input {
     width: 100%;
     padding: 15px;
     font-size: 1rem;
     border: 2px solid white;
     border-radius: 5px;
-    box-shadow: 0 0 10px #ff0000;
+    box-shadow: 0 0 10px #00bfff;
     background-color: transparent;
     color: #fff;
     outline: none;
 }
 
-#crypto-input::placeholder,
-#wallet-input::placeholder {
-    color: #aaa;
-    font-style: italic;
-}
-
-#dropdown-menu,
-#wallet-dropdown-menu {
+#dropdown-menu {
     position: absolute;
     top: 60px;
     width: 100%;
     background-color: #222;
     border-radius: 5px;
-    border: 2px solid #ff0000;
-    box-shadow: 0 0 10px #ff0000;
+    border: 2px solid #00bfff;
+    box-shadow: 0 0 10px #00bfff;
     padding: 10px;
     display: none;
 }
 
-#dropdown-menu li,
-#wallet-dropdown-menu li {
+/* Dropdown Menu Items */
+#dropdown-menu li {
     padding: 10px;
     cursor: pointer;
     list-style: none;
 }
 
-#dropdown-menu li:hover,
-#wallet-dropdown-menu li:hover {
-    background-color: #ff0000;
+#dropdown-menu li:hover {
+    background-color: #00bfff;
     color: #000;
 }
 
@@ -163,7 +141,7 @@ header {
 }
 
 .cta-button:hover {
-    background-color: #ff0000;
+    background-color: #00bfff;
     color: #000;
     transform: scale(1.05);
 }
@@ -181,9 +159,9 @@ header {
 .section-image {
     flex: 0.3;
     max-width: 250px;
-    border: 2px solid #ff0000;
+    border: 2px solid #00bfff;
     border-radius: 10px;
-    box-shadow: 0 0 10px #ff0000;
+    box-shadow: 0 0 10px #00bfff;
     transition: transform 0.3s ease;
 }
 
@@ -210,17 +188,17 @@ header {
     flex: 1 1 calc(33.333% - 40px);
     margin: 10px;
     padding: 20px;
-    border: 2px solid #ff0000;
+    border: 2px solid #00bfff;
     border-radius: 10px;
     background-color: transparent;
     text-align: center;
-    box-shadow: 0 0 10px #ff0000;
+    box-shadow: 0 0 10px #00bfff;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .tool-box:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 20px #ff0000;
+    box-shadow: 0 0 20px #00bfff;
 }
 
 .tool-box .subheading {
@@ -264,5 +242,19 @@ footer {
 
 .social-icons a img:hover {
     transform: scale(1.2);
-    box-shadow: 0 0 10px #ff0000;
+    box-shadow: 0 0 10px #00bfff;
 }
+
+/* Red Theme Overrides */
+body.red-theme .menu-button:hover {
+    background-color: #ff0000;
+    color: #000;
+}
+
+body.red-theme .heading {
+    text-shadow: 0 0 10px #ff0000;
+}
+
+body.red-theme .
+::contentReference[oaicite:0]{index=0}
+ 
