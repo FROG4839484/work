@@ -60,4 +60,14 @@ document.addEventListener("DOMContentLoaded", () => {
             link.classList.remove("active");
         }
     });
+
+    // Hamburger Menu Toggle
+    const hamburgerMenu = document.getElementById("hamburger-menu");
+    const navMenu = document.querySelector(".nav-menu");
+
+    if (hamburgerMenu && navMenu) {
+        hamburgerMenu.addEventListener("click", () => {
+            navMenu.classList.toggle("visible");
+        });
+    }
 });
