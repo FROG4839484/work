@@ -109,7 +109,30 @@ header {
     font-style: italic;
 }
 
-/* Buttons */
+#dropdown-menu {
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    background-color: #222;
+    border-radius: 5px;
+    border: 2px solid #00bfff;
+    box-shadow: 0 0 10px #00bfff;
+    padding: 10px;
+    display: none;
+}
+
+#dropdown-menu li {
+    padding: 10px;
+    cursor: pointer;
+    list-style: none;
+}
+
+#dropdown-menu li:hover {
+    background-color: #00bfff;
+    color: #000;
+}
+
+/* Buttons and CTA */
 .cta-button {
     margin-top: 20px;
     padding: 15px 25px;
@@ -147,6 +170,35 @@ header {
 
 .section-image:hover {
     transform: scale(1.05);
+}
+
+/* Tools Section */
+.tools-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.tools-box-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.tool-box {
+    flex: 1;
+    margin: 0 10px;
+    padding: 20px;
+    border: 2px solid #00bfff;
+    border-radius: 10px;
+    background-color: transparent;
+    text-align: center;
+    box-shadow: 0 0 10px #00bfff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tool-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #00bfff;
 }
 
 /* Footer */
