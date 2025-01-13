@@ -33,6 +33,21 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+    // Glitch Animation for "Our Tools" Section
+    const glitchBoxes = document.querySelectorAll(".glitch-box");
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                glitchBoxes.forEach((box, index) => {
+                    setTimeout(() => box.classList.add("animate-glitch"), index * 100); // Staggered animation
+                });
+                observer.disconnect(); // Trigger only once
+            }
+        });
+    }, { threshold: 0.2 });
+
+    glitchBoxes.forEach((box) => observer.observe(box));
+
     // Navigation Highlighting
     const navLinks = document.querySelectorAll(".menu-button");
     const currentPage = location.pathname.split("/").pop();
