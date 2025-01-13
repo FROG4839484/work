@@ -94,14 +94,16 @@ header {
 /* Dropdown Menu */
 #dropdown-menu {
     position: absolute;
-    top: 60px;
-    width: 25%;
+    top: calc(100% + 5px);
+    left: 0;
+    width: 100%;
     background-color: #222;
     border-radius: 5px;
     border: 2px solid var(--primary-glow);
     box-shadow: 0 0 10px var(--primary-glow);
     padding: 10px;
     display: none;
+    z-index: 1000;
 }
 
 #dropdown-menu li {
