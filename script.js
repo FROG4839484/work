@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Theme Setup
+    // Apply Theme Colors
     const bodyClass = document.body.classList.contains("red-theme") ? "red-theme" : "blue-theme";
-    document.documentElement.style.setProperty("--primary-glow", bodyClass === "red-theme" ? "#ff4500" : "#00bfff");
+    const glowColor = bodyClass === "red-theme" ? "#ff4500" : "#00bfff";
+    document.documentElement.style.setProperty("--primary-glow", glowColor);
 
     // Dropdown Menu Logic
     const cryptoInput = document.getElementById("crypto-input");
