@@ -95,7 +95,7 @@ header {
 #dropdown-menu {
     position: absolute;
     top: 60px;
-    width: 100%;
+    width: 25%;
     background-color: #222;
     border-radius: 5px;
     border: 2px solid var(--primary-glow);
