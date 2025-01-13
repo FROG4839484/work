@@ -143,12 +143,21 @@ header {
     text-align: left;
 }
 
+.glowing-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border: 2px solid var(--primary-glow);
+    border-radius: 10px;
+    box-shadow: 0 0 20px var(--primary-glow);
+    background-color: transparent;
+    gap: 20px;
+}
+
 .section-image {
     flex: 0.3;
     max-width: 250px;
-    border: 2px solid var(--primary-glow);
-    border-radius: 10px;
-    box-shadow: 0 0 10px var(--primary-glow);
     transition: transform 0.3s ease;
 }
 
