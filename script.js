@@ -1,5 +1,3 @@
-// Script for S.U.S AI Website
-
 document.addEventListener("DOMContentLoaded", () => {
     // Theme Setup
     const bodyClass = document.body.classList.contains("red-theme") ? "red-theme" : "blue-theme";
@@ -24,38 +22,17 @@ document.addEventListener("DOMContentLoaded", () => {
                 dropdownMenu.style.display = "none";
             }
         });
-
-        // Add hover effects to dropdown items
-        const dropdownItems = dropdownMenu.querySelectorAll("li");
-        dropdownItems.forEach((item) => {
-            item.addEventListener("mouseenter", () => item.style.backgroundColor = "var(--primary-glow)");
-            item.addEventListener("mouseleave", () => item.style.backgroundColor = "");
-        });
     }
 
-    // Glitch Animation for "Our Tools" Section
+    // Glitch Animation for Tools Section
     const glitchBoxes = document.querySelectorAll(".glitch-box");
-    const observer = new IntersectionObserver((entries, observer) => {
+    const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
-                glitchBoxes.forEach((box, index) => {
-                    setTimeout(() => box.classList.add("animate-glitch"), index * 100); // Staggered animation
-                });
-                observer.disconnect(); // Trigger only once
+                entry.target.classList.add("animate-glitch");
             }
         });
     }, { threshold: 0.2 });
 
     glitchBoxes.forEach((box) => observer.observe(box));
-
-    // Navigation Highlighting
-    const navLinks = document.querySelectorAll(".menu-button");
-    const currentPage = location.pathname.split("/").pop();
-    navLinks.forEach(link => {
-        if (link.href.includes(currentPage)) {
-            link.classList.add("active");
-        } else {
-            link.classList.remove("active");
-        }
-    });
 });
