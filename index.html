@@ -1,128 +1,255 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="S.U.S AI - Secure Utility Systems">
-    <title>S.U.S AI</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
-</head>
-<body>
-    <!-- Header -->
-    <header>
-        <div class="menu">
-            <div class="logo-container">
-                <img src="mascot-logo.png" alt="S.U.S AI Logo" class="logo">
-            </div>
-            <nav>
-                <a href="https://discord.gg/Kk6nU79Z" class="menu-button">JOIN OUR COMMUNITY</a>
-                <a href="is-it-sus.html" class="menu-button">IS IT SUS</a>
-                <a href="sus-collab.html" class="menu-button">SUS COLLAB</a>
-            </nav>
-        </div>
-    </header>
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #000;
+    background-image: radial-gradient(white 1px, transparent 1px),
+                      radial-gradient(white 2px, transparent 2px),
+                      radial-gradient(white 3px, transparent 3px);
+    background-size: 150px 150px, 300px 300px, 600px 600px;
+    background-position: 0px 0px, 75px 75px, 150px 150px;
+    color: #fff;
+}
 
-    <!-- Hero Section -->
-    <section id="hero">
-        <h1 class="heading">S.U.S AI</h1>
-        <h2 class="subheading">Secure Utility Systems</h2>
-        <div class="input-container">
-            <input id="crypto-input" type="text" placeholder="coming soon... / for menu" />
-            <ul id="dropdown-menu">
-                <li>/AI Analysis</li>
-                <li>/Holders</li>
-                <li>/Snipers</li>
-                <li>/Bots</li>
-                <li>/Socials</li>
-                <li>/Dev</li>
-                <li>/Token Info</li>
-            </ul>
-        </div>
-        <button class="cta-button">Is It SUS</button>
-    </section>
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: black;
+}
 
-    <!-- Alternating Layout Sections -->
-    <section id="analyze" class="section">
-        <div class="content">
-            <div class="text-content">
-                <h2 class="heading">Analyze Token Security</h2>
-                <p>SUS analyzes your tokens or manually checks for manipulated contracts, sniper wallets, bundling, and holders.</p>
-            </div>
-            <img src="mascot-tech.png" alt="Token Analysis Mascot" class="section-image">
-        </div>
-    </section>
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
 
-    <section id="tools" class="section">
-        <div class="content">
-            <img src="Mascot-computer.png" alt="Developer Tools Mascot" class="section-image">
-            <div class="text-content">
-                <h2 class="heading">Developer Tools</h2>
-                <p>Collaborate, access verified APIs, and build modular AI agents tailored to blockchain tasks, dApps, and wallets.</p>
-            </div>
-        </div>
-    </section>
+.logo-container img {
+    height: 50px;
+    width: auto;
+}
 
-    <!-- Expanded Our Tools Section -->
-    <section id="features" class="section tools-section">
-        <h2 class="heading">Our Tools</h2>
-        <div class="tools-box-container">
-            <!-- Row 1 -->
-            <div class="tool-box">
-                <h3 class="subheading">Dynamic AI Agents</h3>
-                <p>Modular AI agents for automating blockchain tasks, real-time data processing, and predictive analytics.</p>
-            </div>
-            <div class="tool-box">
-                <h3 class="subheading">Multi-Modal Data Parsers</h3>
-                <p>Advanced tools for parsing datasets like JSON and blockchain transactions using neural parsing.</p>
-            </div>
-            <div class="tool-box">
-                <h3 class="subheading">Autonomous Debugging Systems</h3>
-                <p>AI-driven debugging assistants that identify and fix code vulnerabilities in real time.</p>
-            </div>
-        </div>
-        <div class="tools-box-container">
-            <!-- Row 2 -->
-            <div class="tool-box">
-                <h3 class="subheading">Decentralized API Framework</h3>
-                <p>Host APIs for dApps with tokenomics and blockchain authentication built in.</p>
-            </div>
-            <div class="tool-box">
-                <h3 class="subheading">Smart Contract Verifiers</h3>
-                <p>Tools for auditing and validating smart contracts to ensure compliance and security.</p>
-            </div>
-            <div class="tool-box">
-                <h3 class="subheading">Cross-Chain Transaction Bundlers</h3>
-                <p>Optimize and bundle transactions across multiple blockchain networks for lower fees.</p>
-            </div>
-        </div>
-        <div class="tools-box-container">
-            <!-- Row 3 -->
-            <div class="tool-box">
-                <h3 class="subheading">Synthetic Dataset Generators</h3>
-                <p>Tools for creating large-scale datasets for AI training and blockchain simulation.</p>
-            </div>
-            <div class="tool-box">
-                <h3 class="subheading">Visual Blockchain Analytics</h3>
-                <p>Generate interactive visualizations for metrics like token flow and wallet clusters.</p>
-            </div>
-            <div class="tool-box">
-                <h3 class="subheading">AI-Assisted Query Builders</h3>
-                <p>Create complex database queries with natural language inputs optimized for distributed systems.</p>
-            </div>
-        </div>
-    </section>
+.menu-button {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <img src="mascot-logo.png" alt="S.U.S AI Logo" class="footer-logo">
-            <div class="social-icons">
-                <a href="#" id="twitter-icon"><img src="x.svg" alt="Twitter Logo"></a>
-                <a href="#" id="telegram-icon"><img src="telegram.svg" alt="Telegram Logo"></a>
-            </div>
-        </div>
-        <p>&copy; 2025 - S.U.S AI LTD</p>
-    </footer>
-</body>
-</html>
+.menu-button:hover {
+    background-color: #00bfff;
+    color: #000;
+    transform: scale(1.05);
+}
+
+/* Hero Section */
+#hero {
+    padding: 150px 20px;
+    text-align: center;
+    background-color: transparent;
+}
+
+.heading {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 3rem;
+    margin: 20px 0;
+    color: white;
+    text-shadow: 0 0 10px #00bfff;
+    transition: transform 0.3s ease;
+}
+
+.heading:hover {
+    transform: scale(1.05);
+}
+
+.subheading {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+    margin: 10px 0;
+    text-shadow: 0 0 5px #00bfff;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.subheading:hover {
+    transform: scale(1.03);
+    opacity: 0.9;
+}
+
+/* Paragraph Text in Sections */
+.content p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Input Container */
+.input-container {
+    position: relative;
+    margin-top: 30px;
+    width: 80%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#crypto-input {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    border: 2px solid white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #00bfff;
+    background-color: transparent;
+    color: #fff;
+    outline: none;
+}
+
+#dropdown-menu {
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    background-color: #222;
+    border-radius: 5px;
+    border: 2px solid #00bfff;
+    box-shadow: 0 0 10px #00bfff;
+    padding: 10px;
+    display: none;
+}
+
+/* Dropdown Menu Items */
+#dropdown-menu li {
+    padding: 10px;
+    cursor: pointer;
+    list-style: none;
+}
+
+#dropdown-menu li:hover {
+    background-color: #00bfff;
+    color: #000;
+}
+
+/* Buttons and CTA */
+.cta-button {
+    margin-top: 20px;
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #00bfff;
+    color: #000;
+    transform: scale(1.05);
+}
+
+/* Section Content */
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 0;
+    padding: 0 50px;
+    text-align: left;
+}
+
+.section-image {
+    flex: 0.3;
+    max-width: 250px;
+    border: 2px solid #00bfff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00bfff;
+    transition: transform 0.3s ease;
+}
+
+.section-image:hover {
+    transform: scale(1.05);
+}
+
+/* Tools Section */
+.tools-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.tools-box-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 10%;
+}
+
+.tool-box {
+    flex: 1 1 calc(33.333% - 40px);
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid #00bfff;
+    border-radius: 10px;
+    background-color: transparent;
+    text-align: center;
+    box-shadow: 0 0 10px #00bfff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tool-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #00bfff;
+}
+
+.tool-box .subheading {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.tool-box p {
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+/* Footer */
+footer {
+    margin-top: 50px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.footer-logo {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons a img {
+    width: 30px;
+    margin: 0 10px;
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 10
+::contentReference[oaicite:0]{index=0}
+ 
